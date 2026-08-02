@@ -1,0 +1,15 @@
+// TypeScript Program to Implement Functions with Optional and Default Parameters
+// Optional and Default Parameters
+
+function display(name: string, age?: number): void {
+    console.log("Name:", name);
+    console.log("Age:", age);
+}
+
+function welcome(name: string = "Guest"): void {
+    console.log("Welcome", name);
+}
+
+display("Adithi");
+welcome();
+welcome("Rahul");
