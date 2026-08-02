@@ -1,0 +1,24 @@
+// TypeScript Program to Demonstrate Public, Private, and Protected
+class Student {
+    public name: string;
+    private age: number;
+    protected course: string;
+
+    constructor(name: string, age: number, course: string) {
+        this.name = name;
+        this.age = age;
+        this.course = course;
+    }
+
+    show(): void {
+        console.log(this.name);
+        console.log(this.age);
+        console.log(this.course);
+    }
+}
+
+let s = new Student("Adithi", 20, "AIML");
+console.log(s.name);   // Public - Accessible
+// console.log(s.age); // Error - Private
+// console.log(s.course); // Error - Protected
+s.show();
